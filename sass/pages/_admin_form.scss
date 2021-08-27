@@ -1,0 +1,40 @@
+.admin_form--wrapper{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+        & form{
+            width: 30%;
+            margin:0 auto;
+            display: flex;
+            flex-direction: column;
+                & input[type=text], input[type=password]{
+                    margin-bottom: 3rem;
+                    border: 1px solid $color-green-nav-btn;
+                    padding: 1rem;
+                        &:focus{
+                            outline: 1px solid $color-green-nav-btn;
+
+                        }
+                }
+                & input[type=submit]{
+                    @include crud_btn($color-green-nav-btn);
+                    color: $color-white;
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                    margin:0 auto;
+                    border: none;
+                }
+        }
+      & p{
+          padding-top: 3rem;
+          color: red;
+      }
+        
+
+}
+a#back_home{
+    @include crud_btn($color-green-nav-btn);
+}

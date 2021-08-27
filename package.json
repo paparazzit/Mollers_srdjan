@@ -1,0 +1,26 @@
+{
+  "name": "mollers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass  sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luka97zr/Mollers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luka97zr/Mollers/issues"
+  },
+  "homepage": "https://github.com/luka97zr/Mollers#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "jquery-plugin": "^0.0.0-ignored",
+    "swup": "^2.0.14"
+  }
+}

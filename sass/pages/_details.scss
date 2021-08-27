@@ -1,0 +1,207 @@
+.section_detailed--product{
+    margin-top: 3%;
+    margin-bottom: 22%;
+}
+.product_wrapper{
+    position: relative;
+    & img{
+        position: absolute;
+        z-index: 1;
+        top: -3%;
+        height: auto;
+    }
+}
+
+.product_content{
+    &--basicinfo{
+        margin-bottom: 2rem;
+        width: 45%;
+        margin-left:42%;
+        padding-right: 5rem;
+        & h2{
+            color: $li-color-black;
+            padding: 2rem 0;
+            font-weight: 400;
+            font-size: 5.3rem;
+            line-height: 7.2rem;
+        }
+        & p{
+            color:$color-green-nav-btn;
+            font-weight: 600;
+            font-size: 2.8rem;
+            line-height: 3.8rem;
+        }
+    }
+    &--main{
+        display: flex;
+        flex-direction: column;
+        padding-right: 5rem;
+        &-wrap{
+            display: flex;
+        }
+        & span{
+            display: inline-block;
+                &.bold{
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                }
+        }
+        & .green_bold{
+            color:$color-green-nav-btn;
+            font-weight:600;
+            font-size: 2.1rem;
+            line-height: 2.8rem;
+        }
+    }   
+    & ul{
+        margin-bottom: 1.5rem;
+        & li{
+            list-style-type: disc;
+        }
+    }
+   
+}
+.product_content--main{
+    width: 50%;
+    margin-left: 42%;
+}
+.content_main--wrap{
+        background-color: $color-home-products-background;
+        padding-top: 2rem;
+       max-height: 50rem;
+}
+
+//footer
+.product_content--footer{
+    position: relative;
+    height:auto;
+    background-color: $color-green-nav-btn;
+    text-align: left;
+        & img{
+            height:27rem;
+            position: absolute;
+            left: 79%;
+            top:-100%;
+        }
+}
+.product_footer{
+    display: inline-block;
+    color: #fff;
+    padding:1rem 3rem 1rem 0;
+    width: 37%;
+    margin-left: 42%;
+    font-size: 2.1rem;
+}
+.product_wrapper{
+    &--1,&--2{
+        & .main_paragraph{
+            padding: 2rem 0 1.5rem;
+        }
+        .green_bold{
+            padding: 1.5rem 0 4.5rem 0;
+        }
+    }
+    &--4,&--5{
+        & ul{
+            padding: 3.5rem 0 .5rem;
+        }
+        & .main_paragraph{
+            padding-bottom: 2rem;
+        }
+        & .bold{
+            padding-bottom: 1.5rem;
+            
+        }
+        .green_bold{
+            padding: .5rem 0 6rem 0;
+        }
+    }
+
+    &--6{
+        & > img{
+            height: 137%;
+            top: 0;
+            left: 1%;
+        }
+        & .main_paragraph{
+            padding: 2rem 0 1.5rem;
+
+        }
+       & .green_bold{
+            padding: 1.5rem 0 4.5rem 0;
+        }
+    }
+}
+
+//Section recommended products
+.recommended_products{
+    text-align: center;
+    background-color: $color-home-products-background;
+    & h4{
+        font-weight: 600;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+        color: $color-green-nav-btn;
+        padding: 7rem 0 4rem 0;
+    }
+    &--wrap{
+        display: flex;
+        
+    }
+}
+
+//add to cart btn
+.product_add-to-cart{
+    display: flex;
+    align-items: baseline;
+    width: 50rem;
+    height: 10vh;
+    margin-left: 45%;
+    margin-top: 3rem;
+
+       & form{
+           display: flex;
+           align-items: center;
+            & input[type=submit]{
+                border: none;
+                @include yellow_btn(0);
+                cursor: pointer;
+            }
+       }
+        & h6{
+            display: inline-block;
+            padding: 0 2rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+        }
+}
+.product_amount--row{
+   display: flex;
+   justify-content: space-between;
+   width: 18rem;
+       & > div{
+            width: 5rem;
+            text-align: center;
+            line-height: 5rem;
+            cursor: pointer;
+             &:not(:nth-child(2)){
+                border: 1px solid $amount-border;
+            }
+            & input{
+                border: 1px solid $color-green-nav-btn;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                    &:focus{
+                        outline: none;
+                    }
+                
+                
+            }
+           
+           
+            
+        }
+}
+   
